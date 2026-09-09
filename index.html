@@ -11,24 +11,25 @@
     <!-- This script tag bootstraps PyScript -->
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 </head>
-
-<style>
-</style>
-
-<body>
+    <body>
     <h2> OBMC Entrep Fair Group 1 - Coffee Shop</h2>
     <p style="font-weight: bold; margin-top: 45px;">Menu:</p>
-    <form>
-        <input id="americano" type="checkbox" placeholder="Americano">
-        <input id="spanish_latte" type="checkbox" placeholder="Spanish Latte">
-        <input id="cold_brew" type="checkbox" placeholder="Cold Brew Malt">
-        <input id="affogato" type="checkbox" placeholder="Affogato">
-        <input id="caramel_macchiato" type="checkbox" placeholder="Caramel Macchiato">
-        <div id="result1"> <py-script src="main.py"></py-script></div>
-        <div id="result2"> <py-script src="main.py"></py-script></div>
-        <div id="result3"> <py-script src="main.py"></py-script></div>
-        <Input type="button" py-dblclick="create_receipt" value="Create Order">
+    <form id="coffee">
+        <input id="item1" type="checkbox">
+        <label for="item1">Americano</label><br>
+        <input id="item2" type="checkbox">
+        <label for="item2">Spanish Latte</label><br>
+        <input id="item3" type="checkbox">
+        <label for="item3">Cold Brew Malt</label><br>
+        <input id="item4" type="checkbox">
+        <label for="item4">Affogato</label><br>
+        <input id="item5" type="checkbox">
+        <label for="item5">Caramel Macchiato</label><br>
+        <Input style="margin-top: 10px;" type="button" py-dblclick="create_receipt" value="Create Order">
     </form>
+    <div id="result1"> <py-script src="skillstest1.py"></py-script></div>
+    <div id="result2"> <py-script src="skillstest1.py"></py-script></div>
+    <div id="result3"> <py-script src="skillstest1.py"></py-script></div>
 </body>
 
 </html>
