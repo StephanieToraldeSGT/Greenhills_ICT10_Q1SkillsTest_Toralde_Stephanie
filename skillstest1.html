@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+
+<style>
+</style>
+
+<body>
+    <h2> OBMC Entrep Fair Group 1 - Coffee Shop</h2>
+    <p style="font-weight: bold; margin-top: 45px;">Menu:</p>
+    <form>
+        <input id="americano" type="checkbox" placeholder="Americano">
+        <input id="spanish_latte" type="checkbox" placeholder="Spanish Latte">
+        <input id="cold_brew" type="checkbox" placeholder="Cold Brew Malt">
+        <input id="affogato" type="checkbox" placeholder="Affogato">
+        <input id="caramel_macchiato" type="checkbox" placeholder="Caramel Macchiato">
+        <div id="result1"> <py-script src="skillstest1.py"></py-script></div>
+        <div id="result2"> <py-script src="skillstest1.py"></py-script></div>
+        <div id="result3"> <py-script src="skillstest1.py"></py-script></div>
+        <Input type="button" py-dblclick="create_receipt" value="Create Order">
+    </form>
+</body>
+
+</html>
